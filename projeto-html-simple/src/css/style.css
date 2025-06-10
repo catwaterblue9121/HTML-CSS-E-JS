@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    font-family: Arial;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+header{
+    background-color: gray;
+}
+
+.logo{
+    width: 170px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.descricao-anime{
+    color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 25px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.descricao{
+    color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: 25px;
+}
+
+li{
+    color: white;
+}
+
+table{
+    color: white;
+}
+
+td{
+    color: white;
+    text-align: center;
+}
+
+thead{
+    background-color: gray;
+}
+
+.cel{
+    background-color: red;
+}
+
+.cez{
+    background-color: green;
+}
+
+.cen{
+    background-color: orange;
+}
+
+.cep{
+    background-color: #fff12b;
+}
+
+.cej{
+    background-color: #2b96ff;
+}
+
+.cepr{
+    background-color: #ff80dd;
+}
+
+.nomeL{
+    background-color: red;
+    border-radius: 10px;
+    margin-left: 700px;
+    margin-right: 700px;
+    padding: 5px;
+}
+.nomeZ{
+ background-color: green;
+    border-radius: 10px;
+    margin-left: 700px;
+    margin-right: 700px;
+    padding: 5px;
+}
+
+.nomeN{
+ background-color: orange;
+    border-radius: 10px;
+    margin-left: 700px;
+    margin-right: 700px;
+    padding: 5px;
+}
+
+.nomeU{
+ background-color: #fff12b;
+    border-radius: 10px;
+    margin-left: 700px;
+    margin-right: 700px;
+    padding: 5px;
+}
+
+.nomeS{
+ background-color: #2b96ff;
+    border-radius: 10px;
+    margin-left: 700px;
+    margin-right: 700px;
+    padding: 5px;
+}
+
+.nomeC{
+    background-color: #ff80dd;
+    border-radius: 10px;
+    margin-left: 700px;
+    margin-right: 700px;
+    padding: 5px;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+a{
+    display: block;
+    margin: 50px auto;
+    width: max-content;
+    color: red;
+}
