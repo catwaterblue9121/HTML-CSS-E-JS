@@ -1,0 +1,56 @@
+/* ===== Responsividade ===== */
+
+/* Tablets (telas até 900px) */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 90%; /* ocupa quase toda a tela */
+        padding: 15px;
+    }
+
+    .container img {
+        width: 150px; /* reduz tamanho da imagem */
+        border-width: 4px;
+    }
+
+    .informacoes p {
+        font-size: 18px;
+    }
+
+    .footer-container {
+        width: 90%;
+    }
+}
+
+/* Celulares (telas até 600px) */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .container img {
+        width: 120px; /* imagem menor no celular */
+        border-width: 3px;
+    }
+
+    .informacoes p {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .social-icons {
+        gap: 15px; /* reduz espaço entre ícones */
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+
+    .informacoes h2 {
+        font-size: 18px;
+    }
+}
