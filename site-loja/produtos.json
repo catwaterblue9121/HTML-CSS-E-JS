@@ -1,0 +1,98 @@
+[
+    {
+        "id": "1",
+        "nome": "Controle Azul",
+        "preco": "199,90",
+        "imagem": "src/imagens/controle azul.png"
+    },
+    {
+        "id": "2",
+        "nome": "Funko Luffy",
+        "preco": "149,90",
+        "imagem": "src/imagens/funko luffy.jpg"
+    },
+    {
+        "id": "3",
+        "nome": "Funko Tanjiro",
+        "preco": "149,90",
+        "imagem": "src/imagens/funko tanjiro.jpg"
+    },
+    {
+        "id": "4",
+        "nome": "Camiseta Jujutsu",
+        "preco": "89,90",
+        "imagem": "src/imagens/jujutsushirt.jpg"
+    },
+    {
+        "id": "5",
+        "nome": "Nintendo Switch",
+        "preco": "2199,90",
+        "imagem": "src/imagens/nswitch.jpg"
+    },
+    {
+        "id": "6",
+        "nome": "Moletom",
+        "preco": "129,90",
+        "imagem": "src/imagens/bcmoletom.jpeg"
+    },
+    {
+        "id": "7",
+        "nome": "Escudo do Link",
+        "preco": "299,90",
+        "imagem": "src/imagens/link shied.png"
+    },
+    {
+        "id": "8",
+        "nome": "Mangá Solo Leveling",
+        "preco": "39,90",
+        "imagem": "src/imagens/mangasl.jpg"
+    },
+    {
+        "id": "9",
+        "nome": "Teclado Gamer",
+        "preco": "249,90",
+        "imagem": "src/imagens/teclado.jpg"
+    },
+    {
+        "id": "10",
+        "nome": "Espadas do Zoro",
+        "preco": "499,90",
+        "imagem": "src/imagens/zoroswords.png"
+    },
+    {
+        "id": "11",
+        "nome": "PlayStation 4",
+        "preco": "1899,90",
+        "imagem": "src/imagens/ps4.jpg"
+    },
+    {
+        "id": "12",
+        "nome": "PC Gamer Completo",
+        "preco": "4999,90",
+        "imagem": "src/imagens/pc gamer completo.png"
+    },
+    {
+        "id": "13",
+        "nome": "Grimório do Asta",
+        "preco": "150,00",
+        "imagem": "src/imagens/astagrimory.png"
+    },
+    {
+        "id": "14",
+        "nome": "Manto dos Touros Negros",
+        "preco": "270,00",
+        "imagem": "src/imagens/mantobb.jpg"
+    },
+    {
+        "id": "15",
+        "nome": "Pelúcia Pikachu",
+        "preco": "140,00",
+        "imagem": "src/imagens/pikachu.webp"
+    },
+    {
+        "id": "16",
+        "nome": "Xbox One",
+        "preco": "2500,00",
+        "imagem": "src/imagens/xbox.webp"
+    }
+]

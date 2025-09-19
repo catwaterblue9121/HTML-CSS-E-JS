@@ -1,0 +1,303 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.produtosprincipais {
+    flex: 1;
+}
+
+body {
+    background-color: rgb(17, 172, 211);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+nav ul li ul li {
+    padding: 8px 20px;
+    list-style: none;
+}
+
+nav ul li ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li ul li:hover {
+    background-color: #f0f0f0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+
+.container {
+    background-color: whitesmoke;
+    border-bottom: 2px solid black;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.banner img {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.container img {
+    width: 120px;
+}
+
+.container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.2s;
+
+}
+
+.container a:hover {
+    color: purple;
+}
+
+.busca {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.busca:hover {
+    color: purple;
+}
+
+.search-box {
+    max-height: 0;
+    overflow: hidden;
+    background: whitesmoke;
+    padding: 0 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.search-box.active {
+    max-height: 100px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    border: none;
+    background: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.2s;
+}
+
+.search-box button:hover {
+    background: darkviolet;
+}
+
+.perfil-link img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.perfil-link img:hover {
+    transform: scale(1.1);
+}
+
+
+.produtosprincipais {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.produto {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.produto button {
+    background: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.produto button:hover {
+    background: darkviolet;
+}
+
+.carrinhoicon {
+    border-radius: 5px;
+    padding: 7px;
+    background-color: purple;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-left: 10px;
+    border: none;
+    transition: 0.2s;
+}
+
+.carrinhoicon:hover {
+    background-color: darkviolet;
+}
+
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 250px;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+}
+
+.cart-dropdown li {
+    margin-bottom: 5px;
+}
+
+.cart-header {
+    position: relative;
+    cursor: pointer;
+}
+
+#cartSubtotal {
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+}
+
+footer {
+    background: whitesmoke;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid black;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.social-icons a[href*="wa.me"]:hover {
+    color: #25D366;
+}
+
+.social-icons a[href*="instagram.com"]:hover {
+    color: #C13584;
+}
+
+.social-icons a[href*="(11) 99999-9999"]:hover {
+    color: #0012b9;
+}
+
+.social-icons a[href*="contato@exemplo.com"]:hover {
+    color: #b90000;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="src/css/styleproduto.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="src/imagens/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Categorias <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Tecnologia</a></li>
+                            <li><a href="#">Anime</a></li>
+                            <li><a href="#">Roupas</a></li>
+                            <li><a href="#">Decorações</a></li>
+                            <li><a href="#">Mangás</a></li>
+                        </ul>
+                    </li>
+                    <li class="cart-header">
+                        <a href="#" id="cartToggle">Carrinho <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul id="cartItems" class="cart-dropdown">
+                            <li id="cartSubtotal">Subtotal: R$ 0,00</li>
+                        </ul>
+                    </li>
+                    <li><a href="contatos.html">Contato</a></li>
+                    <li class="busca"><i class="fa-solid fa-magnifying-glass"></i></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="search-box" id="searchBox">
+        <input type="text" placeholder="Buscar produtos...">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+
+    <div class="info" id="produtoInfo">
+        <!-- O cartão do produto vai ser gerado aqui pelo JS -->
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Gustavo Nogueira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+       const produtos = [
+    { id: 1, nome: "Controle Azul", preco: "R$ 199,90", img: "src/imagens/controle azul.png", descricao: "Controle Azul ergonômico com design moderno, botões responsivos e conexão sem fio. Material: plástico ABS de alta durabilidade. Dimensões: 16 x 10 x 6 cm. Peso: 200g. Compatível com PC, Android e consoles selecionados." },
+    { id: 2, nome: "Funko Luffy", preco: "R$ 149,90", img: "src/imagens/funko luffy.jpg", descricao: "Funko Pop Luffy, personagem de One Piece. Material: vinil resistente. Altura: 10 cm. Pintura detalhada e acabamento premium. Ideal para exibição ou coleção." },
+    { id: 3, nome: "Funko Tanjiro", preco: "R$ 149,90", img: "src/imagens/funko tanjiro.jpg", descricao: "Funko Pop Tanjiro de Demon Slayer. Vinil de alta qualidade, altura: 10 cm. Acabamento detalhado, perfeito para colecionadores e fãs do anime." },
+    { id: 4, nome: "Camiseta Jujutsu", preco: "R$ 89,90", img: "src/imagens/jujutsushirt.jpg", descricao: "Camiseta Jujutsu Kaisen em algodão 100%, confortável e leve. Tamanhos disponíveis: P, M, G, GG. Lavável à máquina e resistente a desbotamento." },
+    { id: 5, nome: "Nintendo Switch", preco: "R$ 2.199,90", img: "src/imagens/nswitch.jpg", descricao: "Console Nintendo Switch portátil com tela de 6,2 polegadas. Memória interna de 32 GB, expansível via cartão microSD. Inclui Joy-Con, dock, e cabos. Bateria com duração de até 6 horas." },
+    { id: 6, nome: "Moletom", preco: "R$ 129,90", img: "src/imagens/bcmoletom.jpeg", descricao: "Moletom unissex, 80% algodão e 20% poliéster. Tamanhos: P, M, G, GG. Capuz ajustável, bolso canguru e costura reforçada. Ideal para uso diário e esportes leves." },
+    { id: 7, nome: "Escudo do Link", preco: "R$ 299,90", img: "src/imagens/link shied.png", descricao: "Rélica do escudo Hylian de Link. Material: plástico rígido de alta resistência. Tamanho: 60 x 40 cm. Leve e ideal para exibição ou cosplay." },
+    { id: 8, nome: "Mangá Solo Leveling", preco: "R$ 39,90", img: "src/imagens/mangasl.jpg", descricao: "Mangá Solo Leveling, edição especial. Formato: 13,5 x 20 cm, 200 páginas, papel couché. Capa com acabamento brilhante. Excelente para leitura e colecionadores." },
+    { id: 9, nome: "Teclado Gamer", preco: "R$ 249,90", img: "src/imagens/teclado.jpg", descricao: "Teclado mecânico gamer com switches Outemu Blue. Iluminação RGB personalizável. Dimensões: 44 x 13 x 4 cm. Material: plástico ABS, resistente a desgaste. Conexão USB." },
+    { id: 10, nome: "Espadas do Zoro", preco: "R$ 499,90", img: "src/imagens/zoroswords.png", descricao: "Réplicas das espadas do Zoro. Material: aço inoxidável para lâmina e madeira para cabo. Comprimento total: 70 cm. Acabamento detalhado, perfeito para exposição ou cosplay." },
+    { id: 11, nome: "PlayStation 4", preco: "R$ 1.899,90", img: "src/imagens/ps4.jpg", descricao: "Console PlayStation 4, 1TB de armazenamento, inclui controle DualShock 4. Conectividade: HDMI, USB, Wi-Fi. Dimensões: 30 x 27 x 5 cm. Pronto para jogos e streaming." },
+    { id: 12, nome: "PC Gamer Completo", preco: "R$ 4.999,90", img: "src/imagens/pc gamer completo.png", descricao: "PC Gamer com processador Intel i7, 16GB RAM, placa de vídeo NVIDIA RTX 3060, SSD 1TB. Gabinete com iluminação RGB. Ideal para jogos pesados e streaming." },
+    { id: 13, nome: "Grimório do Asta", preco: "R$ 150,00", img: "src/imagens/astagrimory.png", descricao: "Rélica do Grimório do Asta em couro sintético. Dimensões: 20 x 15 cm. Ideal para colecionadores e fãs de Black Clover. Páginas em branco para anotação ou exibição." },
+    { id: 14, nome: "Manto dos Touros Negros", preco: "R$ 270,00", img: "src/imagens/mantobb.jpg", descricao: "Manto inspirado em Black Clover. Material: poliéster e algodão, leve e confortável. Tamanhos: P, M, G, GG. Detalhes bordados e design fiel ao anime." },
+    { id: 15, nome: "Pelúcia Pikachu", preco: "R$ 140,00", img: "src/imagens/pikachu.webp", descricao: "Pelúcia do Pikachu, 30 cm, material macio e hipoalergênico. Ideal para crianças e colecionadores. Costuras reforçadas e lavável à mão." },
+    { id: 16, nome: "Xbox One", preco: "R$ 2.500,00", img: "src/imagens/xbox.webp", descricao: "Console Xbox One com 1TB de armazenamento. Inclui controle wireless, conexão HDMI e USB. Compatível com diversos jogos digitais e físicos. Dimensões: 33 x 27 x 8 cm." }
+];
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = parseInt(urlParams.get('id'));
+
+        // Procurar o produto
+        const produto = produtos.find(p => p.id === id);
+
+        if (produto) {
+            const infoDiv = document.getElementById('produtoInfo');
+            infoDiv.innerHTML = `
+                <div class="produto">
+                    <img src="${produto.img}" alt="${produto.nome}">
+                    <h3>${produto.nome}</h3>
+                    <p class="preco">${produto.preco}</p>
+                    <p class="descricao">${produto.descricao}</p>
+                    <div class="acoes">
+                        <button>Comprar</button>
+                        <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            `;
+        } else {
+            document.getElementById('produtoInfo').innerHTML = "<p>Produto não encontrado!</p>";
+        }
+    </script>
+    <script src="src/js/busca.js"></script>
+    <script src="src/js/carrinho.js"></script>
+    <script src="src/js/categorias.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.produtosprincipais {
+    flex: 1;
+}
+
+body {
+    background-color: rgb(17, 172, 211);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+nav ul li ul li {
+    padding: 8px 20px;
+    list-style: none;
+}
+
+nav ul li ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li ul li:hover {
+    background-color: #f0f0f0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+
+.container {
+    background-color: whitesmoke;
+    border-bottom: 2px solid black;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.container img {
+    width: 120px;
+}
+
+.container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.2s;
+}
+
+.container a:hover {
+    color: purple;
+}
+
+.busca {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.busca:hover {
+    color: purple;
+}
+
+.search-box {
+    max-height: 0;
+    overflow: hidden;
+    background: whitesmoke;
+    padding: 0 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.search-box.active {
+    max-height: 100px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    border: none;
+    background: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.2s;
+}
+
+.search-box button:hover {
+    background: darkviolet;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 50px;
+}
+
+.produto {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 1.3em;
+    margin: 10px 0 5px;
+    color: black;
+}
+
+.produto .preco {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #e53935;
+    margin-bottom: 10px;
+}
+
+.produto .descricao {
+    font-size: 0.95em;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.produto .acoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.produto .acoes button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.produto .acoes button:first-child {
+    background-color: purple;
+    color: white;
+}
+
+.produto .acoes button:first-child:hover {
+    background-color: darkviolet;
+}
+
+.produto .acoes .carrinhoicon {
+    background-color: #eee;
+}
+
+.produto .acoes .carrinhoicon:hover {
+    background-color: #ddd;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.produtosprincipais {
+    flex: 1;
+}
+
+body {
+    background-color: rgb(17, 172, 211);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+nav ul li ul li {
+    padding: 8px 20px;
+    list-style: none;
+}
+
+nav ul li ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li ul li:hover {
+    background-color: #f0f0f0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+
+.container {
+    background-color: whitesmoke;
+    border-bottom: 2px solid black;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.banner img {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.container img {
+    width: 120px;
+}
+
+.container a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.2s;
+
+}
+
+.container a:hover {
+    color: purple;
+}
+
+.busca {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.busca:hover {
+    color: purple;
+}
+
+.search-box {
+    max-height: 0;
+    overflow: hidden;
+    background: whitesmoke;
+    padding: 0 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.search-box.active {
+    max-height: 100px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    border: none;
+    background: purple;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.2s;
+}
+
+.search-box button:hover {
+    background: darkviolet;
+}
+
+.perfil-link img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.perfil-link img:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background: whitesmoke;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid black;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.social-icons a[href*="wa.me"]:hover {
+    color: #25D366;
+}
+
+.social-icons a[href*="instagram.com"]:hover {
+    color: #C13584;
+}
+
+.social-icons a[href*="(11) 99999-9999"]:hover {
+    color: #0012b9;
+}
+
+.social-icons a[href*="contato@exemplo.com"]:hover {
+    color: #b90000;
+}

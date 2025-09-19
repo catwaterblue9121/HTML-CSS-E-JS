@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="src/css/stylecontatos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="src/imagens/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Categorias <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Tecnologia</a></li>
+                            <li><a href="#">Anime</a></li>
+                            <li><a href="#">Roupas</a></li>
+                            <li><a href="#">Decorações</a></li>
+                            <li><a href="#">Mangás</a></li>
+                        </ul>
+                    </li>
+                    <li class="cart-header">
+                        <a href="#" id="cartToggle">Carrinho <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul id="cartItems" class="cart-dropdown">
+                            <li id="cartSubtotal">Subtotal: R$ 0,00</li>
+                        </ul>
+                    </li>
+                    <li><a href="contatos.html">Contato</a></li>
+                    <li class="busca"><i class="fa-solid fa-magnifying-glass"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="search-box" id="searchBox">
+        <input type="text" placeholder="Buscar produtos...">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="msgbox">
+        <form>
+            <h2>Contatos</h2>
+            <br>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <h2>Mensagem</h2>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem aqui:"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Gustavo Nogueira. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://wa.me/5599999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="contato@exemplo.com"><i class="fas fa-envelope"></i></a>
+                <a href="(11) 99999-9999"><i class="fas fa-phone"></i></a>
+                <a href="https://instagram.com/seuusuario" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/busca.js"></script>
+    <script src="src/js/carrinho.js"></script>
+    <script src="src/js/validation.js"></script>
+    <script src="src/js/categorias.js"></script>
+</body>
+
+
+</html>

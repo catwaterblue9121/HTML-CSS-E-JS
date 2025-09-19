@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online de Produtos</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="src/imagens/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Categorias <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#tecnologia">Tecnologia</a></li>
+                            <li><a href="#anime">Anime</a></li>
+                            <li><a href="#roupas">Roupas</a></li>
+                            <li><a href="#decoracoes">Decorações</a></li>
+                            <li><a href="#mangas">Mangás</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="cart-header">
+                        <a href="#" id="cartToggle">Carrinho <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul id="cartItems" class="cart-dropdown">
+                            <li id="cartSubtotal">Subtotal: R$ 0,00</li>
+                        </ul>
+                    </li>
+                    <li><a href="contatos.html">Contato</a></li>
+                    <li class="busca"><i class="fa-solid fa-magnifying-glass"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-box" id="searchBox">
+        <input type="text" placeholder="Buscar produtos...">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <br>
+    <div class="banner">
+        <img src="src/imagens/banner.png" alt="">
+    </div>
+    <br><br>
+
+    <h1>Produtos Principais</h1>
+
+    <!-- Tecnologia -->
+    <section id="tecnologia">
+        <h2>Tecnologia</h2>
+        <div class="produtosprincipais">
+            <div class="produto">
+                <img src="src/imagens/controle azul.png" alt="Controle Azul">
+                <h3>Controle Azul</h3>
+                <p class="preco">R$ 199,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=1"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="src/imagens/nswitch.jpg" alt="Nintendo Switch">
+                <h3>Nintendo Switch</h3>
+                <p class="preco">R$ 2.199,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=5"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="src/imagens/teclado.jpg" alt="Teclado Gamer">
+                <h3>Teclado Gamer</h3>
+                <p class="preco">R$ 249,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=9"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="src/imagens/ps4.jpg" alt="PlayStation 4">
+                <h3>PlayStation 4</h3>
+                <p class="preco">R$ 1.899,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=11"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="src/imagens/pc gamer completo.png" alt="PC Gamer">
+                <h3>PC Gamer Completo</h3>
+                <p class="preco">R$ 4.999,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=12"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="src/imagens/xbox.webp" alt="Xbox One">
+                <h3>Xbox One</h3>
+                <p class="preco">R$ 2.500,00</p>
+                <div class="acoes">
+                    <a href="produto.html?id=16"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anime -->
+    <section id="anime">
+        <h2>Anime</h2>
+        <div class="produtosprincipais">
+            <div class="produto">
+                <img src="src/imagens/funko luffy.jpg" alt="Funko Luffy">
+                <h3>Funko Luffy</h3>
+                <p class="preco">R$ 149,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=2"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="src/imagens/funko tanjiro.jpg" alt="Funko Tanjiro">
+                <h3>Funko Tanjiro</h3>
+                <p class="preco">R$ 149,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=3"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="src/imagens/astagrimory.png" alt="Grimório do Asta">
+                <h3>Grimório do Asta</h3>
+                <p class="preco">R$ 150,00</p>
+                <div class="acoes">
+                    <a href="produto.html?id=13"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roupas -->
+    <section id="roupas">
+        <h2>Roupas</h2>
+        <div class="produtosprincipais">
+            <div class="produto">
+                <img src="src/imagens/bcmoletom.jpeg" alt="Moletom">
+                <h3>Moletom</h3>
+                <p class="preco">R$ 129,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=6"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                </div>
+                  <div class="produto">
+                    <img src="src/imagens/jujutsushirt.jpg" alt="Camiseta Jujutsu">
+                    <h3>Camiseta Jujutsu</h3>
+                    <p class="preco">R$ 89,90</p>
+                    <div class="acoes">
+                        <a href="produto.html?id=4"><button>Comprar</button></a>
+                        <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+            </div>
+             <div class="produto">
+                <img src="src/imagens/mantobb.jpg" alt="Manto dos Touros Negros">
+                <h3>Manto dos Touros Negros</h3>
+                <p class="preco">R$ 270,00</p>
+                <div class="acoes">
+                    <a href="produto.html?id=14"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+        </div>
+    </section>
+
+    <!-- Mangás -->
+    <section id="mangas">
+        <h2>Mangás</h2>
+        <div class="produtosprincipais">
+            <div class="produto">
+                <img src="src/imagens/mangasl.jpg" alt="Mangá Solo Leveling">
+                <h3>Mangá Solo Leveling</h3>
+                <p class="preco">R$ 39,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=8"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Decorações -->
+    <section id="decoracoes">
+        <h2>Decorações</h2>
+        <div class="produtosprincipais">
+            <div class="produto">
+                <img src="src/imagens/link shied.png" alt="Escudo do Link">
+                <h3>Escudo do Link</h3>
+                <p class="preco">R$ 299,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=7"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="src/imagens/zoroswords.png" alt="Espadas do Zoro">
+                <h3>Espadas do Zoro</h3>
+                <p class="preco">R$ 499,90</p>
+                <div class="acoes">
+                    <a href="produto.html?id=10"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="src/imagens/pikachu.webp" alt="Pelúcia Pikachu">
+                <h3>Pelúcia Pikachu</h3>
+                <p class="preco">R$ 140,00</p>
+                <div class="acoes">
+                    <a href="produto.html?id=15"><button>Comprar</button></a>
+                    <button class="carrinhoicon"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Gustavo Nogueira. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://wa.me/5599999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="gustavo.nogueira.fukabori1a@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="(11) 99999-9999"><i class="fas fa-phone"></i></a>
+                <a href="https://instagram.com/seuusuario" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/busca.js"></script>
+    <script src="src/js/categorias.js"></script>
+    <script src="src/js/carrinho.js"></script>
+</body>
+
+</html>
