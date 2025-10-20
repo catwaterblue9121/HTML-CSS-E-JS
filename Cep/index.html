@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP - API</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <h1>Consulta de CEP</h1>
+
+    <div class="container">
+        <form method="get" action=".">
+            <label>CEP:</label>
+            <input name="cep" type="text" id="cep" maxlength="9" onblur="pesquisacep(this.value);" />
+
+            <label>Logradouro:</label>
+            <input name="logradouro" type="text" id="logradouro" />
+
+            <label>Complemento:</label>
+            <input name="complemento" type="text" id="complemento" />
+
+            <label>Unidade:</label>
+            <input name="unidade" type="text" id="unidade" maxlength="9" />
+
+            <label>Bairro:</label>
+            <input name="bairro" type="text" id="bairro" />
+
+            <label>Localidade:</label>
+            <input name="localidade" type="text" id="localidade" />
+
+            <label>UF:</label>
+            <input name="uf" type="text" id="uf" maxlength="2" />
+
+            <label>Estado:</label>
+            <input name="estado" type="text" id="estado" />
+
+            <label>Região:</label>
+            <input name="regiao" type="text" id="regiao" />
+
+            <label>IBGE:</label>
+            <input name="ibge" type="text" id="ibge" maxlength="9" />
+
+            <label>GIA:</label>
+            <input name="gia" type="text" id="gia" maxlength="9" />
+
+            <label>DDD:</label>
+            <input name="ddd" type="text" id="ddd" maxlength="3" />
+
+            <label>SIAFI:</label>
+            <input name="siafi" type="text" id="siafi" maxlength="9" />
+        </form>
+    </div>
+
+    <script src="src/js/cep.js"></script>
+</body>
+
+</html>
