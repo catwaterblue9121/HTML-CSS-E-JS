@@ -1,0 +1,251 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BASE */
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #c8ddff, #ffffff);
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0084ff, #0066cc);
+    padding: 30px;
+    border-bottom: 3px solid #003f8a;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* FOOTER */
+footer {
+    background: #ffffff88;
+    backdrop-filter: blur(6px);
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    border-top: 2px solid #0059c9;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #000000;
+    font-size: 26px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a[href*="wa.me"]:hover {
+    color: #25D366;
+}
+
+.social-icons a[href^="mailto"]:hover {
+    color: #d10000;
+}
+
+.social-icons a[href^="tel"]:hover {
+    color: #0033cc;
+}
+
+.social-icons a[href*="instagram.com"]:hover {
+    color: #C13584;
+}
+
+/* CONTAINER LOGIN */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    background: white;
+    padding: 50px 60px;
+    margin-top: 5%;
+    border-radius: 15px;
+
+    border: none;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+
+    width: 380px;
+    min-height: 500px;
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TÍTULO */
+.titlepass {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #003d80;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 1px 2px #00000033;
+}
+
+/* LABELS */
+.login label {
+    width: 100%;
+    font-size: 16px;
+    color: #003d80;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.name,
+.password {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+
+    border-radius: 8px;
+    border: 2px solid #b5cfff;
+    background: #f5f9ff;
+
+    transition: 0.3s ease-in-out;
+}
+
+.name:focus,
+.password:focus {
+    border-color: #0062ff;
+    background: white;
+    box-shadow: 0px 0px 8px #0062ff55;
+    outline: none;
+}
+
+/* HOVER */
+.name:hover,
+.password:hover {
+    background-color: #e7f0ff;
+}
+
+/* BOTÃO */
+.buttonsumit {
+    padding: 12px 50px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #006cff, #004bb5);
+    color: white;
+
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    width: 100%;
+}
+
+.buttonsumit:hover {
+    background: linear-gradient(135deg, #004ad1, #003691);
+    transform: scale(1.03);
+}
+
+/* LINK - ESQUECEU SENHA */
+.links {
+    display: inline-block;
+    margin-top: 10px;
+    color: #004bb5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.links:hover {
+    color: #002e73;
+    text-decoration: underline;
+}
+
+.input-group {
+    width: 100%;
+}
+
+/* Caixa do input com ícone dentro */
+.input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+/* Input */
+.input-with-icon input {
+    width: 100%;
+    padding-right: 45px;
+    /* espaço para o ícone */
+}
+
+/* Ícone dentro do input */
+.input-with-icon i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #003d80;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Hover */
+.input-with-icon i:hover {
+    color: #0062ff;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .login {
+        width: 90%;
+        padding: 30px;
+        min-height: 450px;
+    }
+
+    .titlepass {
+        font-size: 28px;
+    }
+
+    .buttonsumit {
+        font-size: 16px;
+    }
+}
