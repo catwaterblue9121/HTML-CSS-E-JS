@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img class="logo" src="src/imagens/logo.png" alt="logo">
+        </div>
+
+        <div class="center">
+            <h1>Biblioteca Virtual : Livros de Terror</h1>
+            <br>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Categorias ▾</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="Romance.html">Romance</a></li>
+                        <li><a href="Aventura.html">Aventura</a></li>
+                        <li><a href="Terror.html">Terror</a></li>
+                        <li><a href="Fantasia.html">Fantasia</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+            </li>
+        </div>
+
+        <form class="search-bar right">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+    <br>
+   <section id="livrosmaisemprestados">
+    <h2>Livros mais emprestados</h2>
+
+    <div class="lme">
+
+        <div class="livro">
+            <img src="src/imagens/IntoThePit.png" alt="1">
+            <h3>Fnaf Fazbear Frights : Into The Pit</h3>
+        </div>
+
+        <div class="livro">
+            <img src="src/imagens/It.png" alt="1">
+            <h3>It : a Coisa</h3>
+        </div>
+
+        <div class="livro">
+            <img src="src/imagens/Chucky.png" alt="1">
+            <h3>Chucky</h3>
+        </div>
+
+        <div class="livro">
+            <img src="src/imagens/OPaciente.png" alt="1">
+            <h3>O Paciente</h3>
+        </div>
+
+         <div class="livro">
+            <img src="src/imagens/EAP.png" alt="1">
+            <h3>Edgar Allan Poe : Medo Clássico</h3>
+        </div>
+
+    </div>
+</section>
+
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Biblioteca Virtual. Todos os direitos reservados. <br> Endereço: Rua Silvana Pereira 123 </p>
+            <div class="social-icons">
+                <a href="https://wa.me/5599999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://instagram.com/seuusuario" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com/seuusuario" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="src/js/dropdown.js"></script>
+    <script src="src/js/pesquisa.js"></script>
+</body>
+
+</html>
