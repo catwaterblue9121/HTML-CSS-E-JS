@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 2</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Calculadora 2</h1>
+        </div>
+    </header>
+
+    <div class="calculator">
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button operator" onclick="appendOperator('+')">+</button>
+
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button operator" onclick="appendOperator('-')">-</button>
+
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button operator" onclick="appendOperator('*')">x</button>
+
+            <button class="button" onclick="appendNumber('0')">0</button>
+            <button class="buttonc" onclick="clearDisplay()">C</button>
+            <button class="buttoni" onclick="calculateResult()">=</button>
+            <button class="button operator" onclick="appendOperator('/')">÷</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Calculadora 2 - Gustavo Nogueira - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

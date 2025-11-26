@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header-content p {
+    margin: 10px 0 0;
+    font-size: 1.1rem;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid black;
+    margin-top: 270px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: whitesmoke;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    font-family: "Jersey 10", sans-serif;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonc {
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(255, 32, 32);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: background-color 0.3s ease;
+    border: 2px solid black;
+}
+
+.buttoni {
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(0, 184, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: background-color 0.3s ease;
+    border: 2px solid black;
+}
+
+.buttonc:hover {
+    background-color: rgb(173, 0, 0);
+}
+
+.buttoni:hover {
+    background-color: green;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #ce7c01;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+}
