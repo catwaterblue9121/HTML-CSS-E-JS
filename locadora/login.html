@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Locadora</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/login.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="left">
+            <img class="logo" src="src/imagens/logo.png" alt="logo">
+        </div>
+
+        <div class="center">
+            <h1>Locadora</h1>
+            <br>
+            <ul class="menu">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastroCarro.html">Cadastro de Carros</a></li>
+                <li><a href="cadastroCliente.html">Clientes</a></li>
+                <li><a href="cadastroAgendamento.html">Agendamento</a></li>
+            </ul>
+        </div>
+
+        <form class="search-bar right">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+
+    <main class="container-login">
+        <form class="login-box">
+
+            <h2>Acessar Sistema</h2>
+
+            <label>Email:</label>
+            <input type="email" class="email" placeholder="Digite seu email" required>
+
+            <label>Senha:</label>
+            <div class="password-field">
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+                <i class="fa-solid fa-eye" id="togglePassword"></i>
+            </div>
+
+            <button type="submit" class="btn-login">Entrar</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Locadora. Todos os direitos reservados. Endereço: Rua Silvana Pereira, 123</p>
+            <br>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/dropdown.js"></script>
+    <script src="src/js/pesquisa.js"></script>
+</body>
+
+</html>

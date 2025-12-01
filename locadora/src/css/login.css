@@ -1,0 +1,164 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(0, 185, 161);
+    padding: 10px 40px;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 135px;
+}
+
+.center {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.search-bar button:hover {
+    background: #ccc;
+}
+
+.container-login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 350px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.email{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.password-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-field input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.password-field i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    
+}
+
+.btn-login {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(0,185,161);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: rgb(0, 150, 130);
+}
+
+footer {
+    background-color: rgb(0, 185, 161);
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    border-top: 3px solid black;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: black;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
