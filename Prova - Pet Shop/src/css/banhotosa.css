@@ -1,0 +1,87 @@
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(255, 207, 48);
+    padding: 10px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header ul {
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 7%;
+    margin-right: 10%;
+    transition: 0.5s;
+}
+
+header a:hover {
+    color: blueviolet;
+}
+
+.info {
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+.info h2 {
+    text-align: center;
+}
+
+.banho {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid rgb(148, 148, 148);
+}
+
+.tosa {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid rgb(148, 148, 148);
+}
+
+.contato{
+    background-color: rgb(255, 207, 48);
+    border: 2px solid purple;
+    border-radius: 5px;
+    font-size: large;
+    margin: 0 auto;
+    display: flex;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.contato:hover{
+    background-color: rgb(212, 171, 36);
+}
+
+footer {
+    background-color: rgb(43, 43, 43);
+    color: whitesmoke;
+    padding: 20px;
+    height: 100%;
+    margin-top: 100%;
+}
+
+footer p {
+    text-align: center;
+}
